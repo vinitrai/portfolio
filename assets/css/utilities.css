@@ -1,0 +1,88 @@
+/*=============== REUSABLE CSS CLASSES ===============*/
+.container {
+  max-width: 560px;
+  padding: 0 1em;
+  margin: 0 auto;
+}
+.grid {
+  display: grid;
+  gap: 1em;
+}
+.section {
+  padding: 6em 0;
+}
+.section__title {
+  color: var(--title-color);
+  font-weight: var(--weight-400);
+  font-size: var(--h1-font-size);
+  margin-bottom: 1em;
+}
+.section__title::before {
+  content: attr(data-title);
+  display: block;
+  letter-spacing: 1px;
+  color: var(--accent-color);
+  text-transform: uppercase;
+  font-size: var(--body-font-size);
+  margin-bottom: 0.25em;
+}
+.heading__title {
+  margin-bottom: 1em;
+  font-size: var(--body-large-font-size);
+  font-weight: var(--weight-400);
+  color: var(--title-color);
+}
+.exp__subtitle {
+  font-size: var(--body-font-size);
+  font-weight: var(--weight-300);
+  color: var(--title-color);
+}
+.text-center {
+  text-align: center;
+}
+
+/* buttons */
+.btn {
+  display: inline-block;
+  padding: 0.9em 2.5em;
+  color: var(--white);
+  border-radius: 8px;
+  transition: all 0.3s ease-in;
+}
+.btn-primary {
+  background-color: var(--accent-color);
+}
+.btn-secondary {
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+}
+
+.btn-primary:hover {
+  background-color: var(--accent-color-dark);
+}
+.btn-secondary:hover {
+  color: var(--white);
+  background-color: var(--accent-color);
+  border: none;
+}
+
+@media only screen and (min-width: 578px) and (max-width: 767px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}

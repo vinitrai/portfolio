@@ -1,0 +1,51 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;400;600&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  --header-height: 3.5rem;
+
+  /*========== Colors ==========*/
+  /* Color mode HSL(hue, saturation, lightness) */
+  --accent-color: hsl(268, 77%, 58%);
+  --accent-color-dark: hsl(268, 78%, 51%);
+  --accent-color-light: hsl(268, 100%, 83%);
+  --title-color: hsl(0, 0%, 83%);
+  --text-color: hsl(0, 0%, 69%);
+  --primary-color: hsl(200, 12%, 5%);
+  --secondary-color: hsl(200, 10%, 8%);
+  --border-color: hsl(0, 0%, 20%);
+  --white: #fff;
+
+  /*========== Font and typography ==========*/
+  /* .5rem = 8px | 1rem = 16px ... */
+  --body-font: "Jost", sans-serif;
+  --hero-font-size: 2.5rem;
+  --h1-font-size: 2rem;
+  --h2-font-size: 1.75rem;
+  --h3-font-size: 1.25rem;
+  --body-large-font-size: 1.125rem;
+  --body-font-size: 1rem;
+
+  /*========== Font weight ==========*/
+  --weight-300: 300;
+  --weight-400: 400;
+  --weight-600: 600;
+}
+.light {
+  --title-color: hsl(247, 27%, 31%);
+  --text-color: hsl(0, 0%, 41%);
+  --primary-color: hsl(0, 0%, 100%);
+  --secondary-color: hsl(266, 78%, 98%);
+  --border-color: hsl(0, 0%, 87%);
+}
+@media screen and (min-width: 768px) {
+  :root {
+    --hero-font-size: 3rem;
+    --h1-font-size: 2.5rem;
+    --h2-font-size: 2.25rem;
+    --h3-font-size: 1.5rem;
+    --body-large-font-size: 1.25rem;
+    --body-font-size: 1.125rem;
+  }
+}

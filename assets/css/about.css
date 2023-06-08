@@ -1,0 +1,112 @@
+.about__container {
+  grid-template-columns: 1fr;
+  row-gap: 1em;
+}
+.about__img-wrapper {
+  height: 250px;
+  margin: 0 auto;
+}
+.about__img {
+  height: 100%;
+}
+.about__img:not(:first-child) {
+  display: none;
+}
+/* .about__content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1em;
+} */
+.about__description {
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  border-bottom: 1px solid var(--border-color);
+}
+.about__details {
+  grid-template-columns: 1fr;
+  margin-bottom: 1em;
+}
+.details__item {
+  display: flex;
+
+  gap: 0.5em;
+}
+.about__bottom {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1em;
+  align-items: flex-start;
+}
+.about__social {
+  display: flex;
+  column-gap: 1em;
+  align-items: center;
+}
+.about__social::before {
+  content: "";
+  display: block;
+
+  background-color: var(--text-color);
+  width: 60px;
+  height: 2px;
+}
+.social__link {
+  color: var(--title-color);
+  background-color: transparent;
+}
+.social__link:hover {
+  color: var(--accent-color);
+}
+@media screen and (min-width: 445px) {
+  .about__details {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+  }
+  .about__img-wrapper {
+    height: 350px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .about__container {
+    grid-template-columns: 4fr 8fr;
+    align-items: center;
+  }
+  .about__img-wrapper {
+    height: 450px;
+    position: relative;
+
+    width: 350px;
+  }
+  .about__img {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease;
+  }
+  .about__img:nth-child(1) {
+    clip-path: polygon(0 0, 0 32%, 28% 0);
+    transform: translateY(-1.25rem);
+  }
+  .about__img:nth-child(2) {
+    display: block;
+    clip-path: polygon(28% 0, 0 32%, 0 100%, 17% 100%, 90% 0);
+    transform: translateY(-0.75rem);
+  }
+  .about__img:nth-child(3) {
+    display: block;
+    clip-path: polygon(100% 0, 100% 65%, 74% 100%, 17% 100%, 90% 0);
+    transform: translateY(-0.25rem);
+  }
+  .about__img:nth-child(4) {
+    display: block;
+    clip-path: polygon(100% 65%, 74% 100%, 100% 100%);
+    transform: translateY(0.25rem);
+  }
+
+  .about__img-wrapper:hover .about__img {
+    transform: translateY(0);
+  }
+}

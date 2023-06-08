@@ -1,0 +1,87 @@
+.style__switcher {
+  padding: 0.5em;
+  border-radius: 8px;
+  position: fixed;
+  top: 50%;
+  right: 20px;
+  z-index: 100;
+
+  transform: translateX(98%);
+  transition: all 0.3s ease-in-out;
+}
+.switch__container {
+  display: flex;
+  align-items: center;
+  column-gap: 1em;
+}
+.switch__controls {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1em;
+  justify-content: space-between;
+}
+.theme__controls {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5em;
+}
+.theme__controls h3 {
+  margin-bottom: 0.5em;
+  font-size: var(--body-font-size);
+  color: var(--text-color);
+}
+.theme__colors {
+  display: flex;
+  align-items: center;
+  column-gap: 0.25em;
+  flex-wrap: wrap;
+}
+
+.mode__btn {
+  pointer-events: none;
+}
+.color__group input[type="radio"] {
+  display: none;
+}
+.color__group label {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+.group-1 label {
+  background-color: hsl(252, 35%, 51%);
+}
+.group-2 label {
+  background-color: hsl(351, 85%, 51%);
+}
+.group-3 label {
+  background-color: hsl(271, 76%, 53%);
+}
+.group-4 label {
+  background-color: hsl(225, 73%, 57%);
+}
+.group-5 label {
+  background-color: hsl(43, 74%, 49%);
+}
+.group-6 label {
+  background-color: hsl(339, 81%, 66%);
+}
+.group-7 label {
+  background-color: hsl(80, 61%, 50%);
+}
+.group-8 label {
+  background-color: hsl(19, 96%, 52%);
+}
+.group-9 label {
+  background-color: hsl(88, 65%, 43%);
+}
+.group-10 label {
+  background-color: hsl(42, 100%, 50%);
+}
+.hide {
+  display: none;
+}
+.removeTransform {
+  transform: translateX(4%);
+}

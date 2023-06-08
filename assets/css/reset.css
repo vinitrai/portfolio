@@ -1,0 +1,39 @@
+/*=============== BASE ===============*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  overflow-x: hidden;
+}
+body,
+input,
+textarea,
+button {
+  font-family: var(--body-font);
+  font-size: var(--body-font-size);
+}
+body {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  line-height: 1.4;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--title-color);
+  font-weight: var(--weight-600);
+  line-height: 1.2;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
